@@ -20,7 +20,7 @@ class PostService
                 unset($data['tag_ids']);
             }
     
-            $data['preview_image']= Storage::put('/images', $data['preview_image']);
+            $data['preview_image']= Storage::disk('public')->put('/images', $data['preview_image']);
             $post = Post::firstOrCreate($data);
     
             if (isset($tagIds)) {

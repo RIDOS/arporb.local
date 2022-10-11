@@ -26,7 +26,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="assets/images/logo.png" alt="АРПО РБ" height="60" width="60">
+    <img class="animation__shake" src="assets/images/log1o.png" alt="АРПО РБ" height="15%" width="auto">
   </div>
 
   <!-- Navbar -->
