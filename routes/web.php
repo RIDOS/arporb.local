@@ -13,8 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/docs', 'Doc\IndexController')->name('docs.index');
+Route::get('/photos', 'Photo\IndexController')->name('photos.index');
+Route::get('/contact', 'Contact\IndexController')->name('contact.index');
+
 Route::group(['namespace' => 'Main'], function () {
     Route::get('/', 'IndexController')->name('main.index');
+});
+
+Route::group(['namespace' => 'Post', 'prefix' => 'posts'], function () {
+    Route::get('/', 'IndexController')->name('post.index');
+    Route::get('/{post}', 'ShowController')->name('post.show');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {

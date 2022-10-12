@@ -18,7 +18,7 @@
     <header class="edica-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img style="width: 100%" src="assets/images/logo.png" alt="Edica"></a>
+                <a class="navbar-brand" href="{{ route('post.index') }}"><img style="width: 100%" src="{{ asset('assets/images/logo.png') }}" alt="Edica"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,18 +28,17 @@
                             <a class="nav-link" href="{{ route('main.index') }}">Главная <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Документы</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" 
-                            id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Фотогалерея</a>
+                            <a class="nav-link" href="{{ route('docs.index') }}">Документы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Контакты</a>
+                            <a class="nav-link" href="{{ route('photos.index') }}">Фотогалерея</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact.index') }}">Контакты</a>
+                        </li>
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="contact.html">Пожертвования</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </nav>
