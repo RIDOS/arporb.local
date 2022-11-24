@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
-
-<div class="blog">
+<main class="blog" style="background: url({{ asset("assets/images/bg.jpg") }}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+    <div class="container" style="background: white;padding: 1em 3em 1em 3em;">
     <div class="container" style="padding-bottom: 15em;">
         <h3 style="">Фотографии</h3>
         <div style="display:flex">
@@ -14,4 +14,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection
