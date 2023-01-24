@@ -63,4 +63,14 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
     });
 });
 
+Route::get('/clear', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    Artisan::call('storage:link');
+
+    return "Cache is clear.";
+});
+
 Auth::routes();

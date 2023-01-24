@@ -1,7 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="blog">
+<main class="blog" style="background: url({{ asset("assets/images/bg.jpg") }}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+    <div class="container" style="background: white;padding: 1em 3em 1em 3em;">
     <div class="container__fluid" style="padding-bottom: 15em;">
         <div class="container">
             <h3 class="mb-4"><b>Контакты</b></h3>
@@ -9,6 +10,15 @@
             <p>Юридический адрес: <a target="_blank" href="https://go.2gis.com/z12vk">г. Уфа, Верхнеторговая пл, д 4, помещ 87</a></p>
             <p>Телефон: <a target="_blank" href="tel:+79276355715">+79276355715</a></p>
             <p>Эл. почта: <a target="_blank" href="mailto:mail@arporb.ru">mail@arporb.ru</a></p>
+            <p>Социальные сети: </p>
+            <p>
+                <a target="_blank" href="https://t.me/arporbru">
+                    <img src="{{ asset("/assets/images/telegram.svg") }}" width="35" height="35"/>
+                </a>
+                <a target="_blank" href="https://vk.com/id711636041">
+                    <img src="{{ asset("/assets/images/vk.svg") }}" width="44" height="35"/>
+                </a>
+            </p>
         </div>
         <div class="container">
             <main class=svelte-mmuo2p>
@@ -20,4 +30,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection

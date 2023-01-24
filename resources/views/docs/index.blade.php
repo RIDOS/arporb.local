@@ -1,8 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="blog">
-    <div class="container" style="padding-bottom: 15em;">
+<main class="blog" style="background: url({{ asset("assets/images/bg.jpg") }}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+    <div class="container" style="background: white;padding: 1em 3em 1em 3em;">
+    <div class="container" style="padding-bottom: 20em;">
         <h3>Документы</h3>
         <ul>
             <li><a target="_blank" href="{{ asset('assets/document.pdf') }}">Устав организации</a></li>

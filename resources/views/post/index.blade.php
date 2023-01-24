@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
-<main class="blog">
-    <div class="container">
+<main class="blog" style="background: url({{ asset("assets/images/bg.jpg") }}) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+    <div class="container" style="background: white;padding: 1em 3em 1em 3em;">
         <h1 class="edica-page-title" data-aos="fade-up">Новости</h1>
         <section class="featured-posts-section">
             <div class="row mb-4">

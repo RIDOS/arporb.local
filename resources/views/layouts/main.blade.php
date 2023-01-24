@@ -47,7 +47,7 @@
 
     @yield('content')
 
-    <footer class="edica-footer" data-aos="fade-up">
+    <footer class="edica-footer">
         <div class="container">
                 <p class="mb-0">АРПОИС ПО РБ 2022</p>
         </div>
